@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
 import { SafraController } from './safra.controller';
 import { SafraService } from './safra.service';
-import { Safra } from 'src/entities/safra.entity';
+import { Safra } from '../../entities/safra.entity';
 import { TypeOrmModule } from '@nestjs/typeorm';
 
 @Module({
