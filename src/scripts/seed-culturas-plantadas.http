@@ -1,0 +1,175 @@
+### Criação de Culturas Plantadas de Exemplo
+
+### Fazenda São João (Rio Verde/GO) - Verão 2024/2025
+POST http://localhost:3000/culturas-plantadas
+Content-Type: application/json
+
+{
+    "propriedade_id": 1,
+    "safra_id": 1,
+    "cultura_id": 1
+}
+
+### Fazenda São João (Rio Verde/GO) - Inverno 2025
+POST http://localhost:3000/culturas-plantadas
+Content-Type: application/json
+
+{
+    "propriedade_id": 1,
+    "safra_id": 2,
+    "cultura_id": 2
+}
+
+### Sítio Boa Esperança (Sorriso/MT) - Verão 2024/2025
+POST http://localhost:3000/culturas-plantadas
+Content-Type: application/json
+
+{
+    "propriedade_id": 2,
+    "safra_id": 1,
+    "cultura_id": 1
+}
+
+### Sítio Boa Esperança (Sorriso/MT) - Inverno 2025
+POST http://localhost:3000/culturas-plantadas
+Content-Type: application/json
+
+{
+    "propriedade_id": 2,
+    "safra_id": 2,
+    "cultura_id": 2
+}
+
+### Rancho Verde Vale (LEM/BA) - Verão 2024/2025
+POST http://localhost:3000/culturas-plantadas
+Content-Type: application/json
+
+{
+    "propriedade_id": 3,
+    "safra_id": 1,
+    "cultura_id": 4
+}
+
+### Fazenda Santa Clara (Primavera do Leste/MT) - Verão 2024/2025
+POST http://localhost:3000/culturas-plantadas
+Content-Type: application/json
+
+{
+    "propriedade_id": 4,
+    "safra_id": 1,
+    "cultura_id": 1
+}
+
+### Fazenda Santa Clara (Primavera do Leste/MT) - Inverno 2025
+POST http://localhost:3000/culturas-plantadas
+Content-Type: application/json
+
+{
+    "propriedade_id": 4,
+    "safra_id": 2,
+    "cultura_id": 9
+}
+
+### Estância Novo Horizonte (Cascavel/PR) - Verão 2024/2025
+POST http://localhost:3000/culturas-plantadas
+Content-Type: application/json
+
+{
+    "propriedade_id": 5,
+    "safra_id": 1,
+    "cultura_id": 1
+}
+
+### Estância Novo Horizonte (Cascavel/PR) - Inverno 2025
+POST http://localhost:3000/culturas-plantadas
+Content-Type: application/json
+
+{
+    "propriedade_id": 5,
+    "safra_id": 2,
+    "cultura_id": 6
+}
+
+### Fazenda Vista Alegre (Cristalina/GO) - Verão 2024/2025
+POST http://localhost:3000/culturas-plantadas
+Content-Type: application/json
+
+{
+    "propriedade_id": 6,
+    "safra_id": 1,
+    "cultura_id": 7
+}
+
+### Sítio das Palmeiras (Dourados/MS) - Verão 2024/2025
+POST http://localhost:3000/culturas-plantadas
+Content-Type: application/json
+
+{
+    "propriedade_id": 7,
+    "safra_id": 1,
+    "cultura_id": 1
+}
+
+### Sítio das Palmeiras (Dourados/MS) - Inverno 2025
+POST http://localhost:3000/culturas-plantadas
+Content-Type: application/json
+
+{
+    "propriedade_id": 7,
+    "safra_id": 2,
+    "cultura_id": 2
+}
+
+### Fazenda Rio Dourado (Barreiras/BA) - Verão 2024/2025
+POST http://localhost:3000/culturas-plantadas
+Content-Type: application/json
+
+{
+    "propriedade_id": 8,
+    "safra_id": 1,
+    "cultura_id": 1
+}
+
+### Fazenda Rio Dourado (Barreiras/BA) - Inverno 2025
+POST http://localhost:3000/culturas-plantadas
+Content-Type: application/json
+
+{
+    "propriedade_id": 8,
+    "safra_id": 2,
+    "cultura_id": 4
+}
+
+### Estância São Pedro (Uberaba/MG) - Verão 2024/2025
+POST http://localhost:3000/culturas-plantadas
+Content-Type: application/json
+
+{
+    "propriedade_id": 9,
+    "safra_id": 1,
+    "cultura_id": 5
+}
+
+### Fazenda Bela Vista (Ponta Grossa/PR) - Verão 2024/2025
+POST http://localhost:3000/culturas-plantadas
+Content-Type: application/json
+
+{
+    "propriedade_id": 10,
+    "safra_id": 1,
+    "cultura_id": 1
+}
+
+### Fazenda Bela Vista (Ponta Grossa/PR) - Inverno 2025
+POST http://localhost:3000/culturas-plantadas
+Content-Type: application/json
+
+{
+    "propriedade_id": 10,
+    "safra_id": 2,
+    "cultura_id": 6
+}
+
+
+###
+GET http://localhost:3000/culturas-plantadas

@@ -1,0 +1,84 @@
+### Criação de Culturas Agrícolas
+
+### Cultura 1 - Soja
+POST http://localhost:3000/culturas
+Content-Type: application/json
+
+{
+    "nome": "Soja"
+}
+
+### Cultura 2 - Milho
+POST http://localhost:3000/culturas
+Content-Type: application/json
+
+{
+    "nome": "Milho"
+}
+
+### Cultura 3 - Café
+POST http://localhost:3000/culturas
+Content-Type: application/json
+
+{
+    "nome": "Café"
+}
+
+### Cultura 4 - Algodão
+POST http://localhost:3000/culturas
+Content-Type: application/json
+
+{
+    "nome": "Algodão"
+}
+
+### Cultura 5 - Cana-de-açúcar
+POST http://localhost:3000/culturas
+Content-Type: application/json
+
+{
+    "nome": "Cana-de-açúcar"
+}
+
+### Cultura 6 - Trigo
+POST http://localhost:3000/culturas
+Content-Type: application/json
+
+{
+    "nome": "Trigo"
+}
+
+### Cultura 7 - Feijão
+POST http://localhost:3000/culturas
+Content-Type: application/json
+
+{
+    "nome": "Feijão"
+}
+
+### Cultura 8 - Arroz
+POST http://localhost:3000/culturas
+Content-Type: application/json
+
+{
+    "nome": "Arroz"
+}
+
+### Cultura 9 - Sorgo
+POST http://localhost:3000/culturas
+Content-Type: application/json
+
+{
+    "nome": "Sorgo"
+}
+
+### Cultura 10 - Girassol
+POST http://localhost:3000/culturas
+Content-Type: application/json
+
+{
+    "nome": "Girassol"
+}
+
+###
+GET http://localhost:3000/culturas

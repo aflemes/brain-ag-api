@@ -1,0 +1,144 @@
+### Criação de Propriedades de Exemplo
+
+### Propriedade 1
+POST http://localhost:3000/propriedades
+Content-Type: application/json
+
+{
+    "produtor_id": 1,
+    "nome": "Fazenda São João",
+    "cidade": "Rio Verde",
+    "estado": "GO",
+    "area_total": 2500,
+    "area_agricultavel": 1800,
+    "area_vegetacao": 700
+}
+
+### Propriedade 2
+POST http://localhost:3000/propriedades
+Content-Type: application/json
+
+{
+    "produtor_id": 2,
+    "nome": "Sítio Boa Esperança",
+    "cidade": "Sorriso",
+    "estado": "MT",
+    "area_total": 1200,
+    "area_agricultavel": 850,
+    "area_vegetacao": 350
+}
+
+### Propriedade 3
+POST http://localhost:3000/propriedades
+Content-Type: application/json
+
+{
+    "produtor_id": 3,
+    "nome": "Rancho Verde Vale",
+    "cidade": "Luís Eduardo Magalhães",
+    "estado": "BA",
+    "area_total": 3000,
+    "area_agricultavel": 2200,
+    "area_vegetacao": 800
+}
+
+### Propriedade 4
+POST http://localhost:3000/propriedades
+Content-Type: application/json
+
+{
+    "produtor_id": 4,
+    "nome": "Fazenda Santa Clara",
+    "cidade": "Primavera do Leste",
+    "estado": "MT",
+    "area_total": 1800,
+    "area_agricultavel": 1200,
+    "area_vegetacao": 600
+}
+
+### Propriedade 5
+POST http://localhost:3000/propriedades
+Content-Type: application/json
+
+{
+    "produtor_id": 5,
+    "nome": "Estância Novo Horizonte",
+    "cidade": "Cascavel",
+    "estado": "PR",
+    "area_total": 950,
+    "area_agricultavel": 650,
+    "area_vegetacao": 300
+}
+
+### Propriedade 6
+POST http://localhost:3000/propriedades
+Content-Type: application/json
+
+{
+    "produtor_id": 6,
+    "nome": "Fazenda Vista Alegre",
+    "cidade": "Cristalina",
+    "estado": "GO",
+    "area_total": 1500,
+    "area_agricultavel": 1100,
+    "area_vegetacao": 400
+}
+
+### Propriedade 7
+POST http://localhost:3000/propriedades
+Content-Type: application/json
+
+{
+    "produtor_id": 7,
+    "nome": "Sítio das Palmeiras",
+    "cidade": "Dourados",
+    "estado": "MS",
+    "area_total": 800,
+    "area_agricultavel": 550,
+    "area_vegetacao": 250
+}
+
+### Propriedade 8
+POST http://localhost:3000/propriedades
+Content-Type: application/json
+
+{
+    "produtor_id": 8,
+    "nome": "Fazenda Rio Dourado",
+    "cidade": "Barreiras",
+    "estado": "BA",
+    "area_total": 2800,
+    "area_agricultavel": 2000,
+    "area_vegetacao": 800
+}
+
+### Propriedade 9
+POST http://localhost:3000/propriedades
+Content-Type: application/json
+
+{
+    "produtor_id": 9,
+    "nome": "Estância São Pedro",
+    "cidade": "Uberaba",
+    "estado": "MG",
+    "area_total": 1300,
+    "area_agricultavel": 900,
+    "area_vegetacao": 400
+}
+
+### Propriedade 10
+POST http://localhost:3000/propriedades
+Content-Type: application/json
+
+{
+    "produtor_id": 8,
+    "nome": "Fazenda Bela Vista",
+    "cidade": "Ponta Grossa",
+    "estado": "PR",
+    "area_total": 1600,
+    "area_agricultavel": 1200,
+    "area_vegetacao": 400
+}
+
+###
+GET http://localhost:3000/propriedades 

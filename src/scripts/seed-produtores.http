@@ -1,0 +1,104 @@
+### Criação de Produtores de Exemplo
+
+### Produtor 1
+POST http://localhost:3000/produtores
+Content-Type: application/json
+
+{
+    "nome": "João Silva",
+    "documento": "60.615.223/0001-95"
+}
+
+### Produtor 2
+POST http://localhost:3000/produtores
+Content-Type: application/json
+
+{
+    "nome": "Maria Souza",
+    "documento": "59.558.251/0001-39"
+}
+
+### Produtor 3
+POST http://localhost:3000/produtores
+Content-Type: application/json
+
+{
+    "nome": "Pedro Santos",
+    "documento": "27.700.380/0001-23"
+}
+
+### Produtor 4
+POST http://localhost:3000/produtores
+Content-Type: application/json
+
+{
+    "nome": "Ana Costa",
+    "documento": "43.687.541/0001-42"
+}
+
+### Produtor 5
+POST http://localhost:3000/produtores
+Content-Type: application/json
+
+{
+    "nome": "Carlos Oliveira",
+    "documento": "70.648.654/0001-01"
+}
+
+### Produtor 6
+POST http://localhost:3000/produtores
+Content-Type: application/json
+
+{
+    "nome": "Lucia Pereira",
+    "documento": "006.155.700-54"
+}
+
+### Produtor 7
+POST http://localhost:3000/produtores
+Content-Type: application/json
+
+{
+    "nome": "Roberto Ferreira",
+    "documento": "823.163.080-58"
+}
+
+### Produtor 8
+POST http://localhost:3000/produtores
+Content-Type: application/json
+
+{
+    "nome": "Fernanda Lima",
+    "documento": "437.321.410-71"
+}
+
+### Produtor 9
+POST http://localhost:3000/produtores
+Content-Type: application/json
+
+{
+    "nome": "Ricardo Martins",
+    "documento": "510.725.740-20"
+}
+
+### Produtor 10
+POST http://localhost:3000/produtores
+Content-Type: application/json
+
+{
+    "nome": "Amanda Alves",
+    "documento": "837.329.490-28"
+}
+
+### Produtor 11
+POST http://localhost:3000/produtores
+Content-Type: application/json
+
+{
+    "nome": "Roberto Simões",
+    "documento": "628.387.150-03"
+}
+
+###
+GET http://localhost:3000/produtores
+

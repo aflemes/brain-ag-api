@@ -1,0 +1,81 @@
+### Criação de Safras de Exemplo
+
+### Safra 1
+POST http://localhost:3000/safras
+Content-Type: application/json
+
+{
+    "nome": "Safra 2024/2025 - Verão"
+}
+
+### Safra 2
+POST http://localhost:3000/safras
+Content-Type: application/json
+
+{
+    "nome": "Safrinha 2025 - Inverno"
+}
+
+### Safra 3
+POST http://localhost:3000/safras
+Content-Type: application/json
+
+{
+    "nome": "Safra 2025/2026 - Verão"
+}
+
+### Safra 4
+POST http://localhost:3000/safras
+Content-Type: application/json
+
+{
+    "nome": "Safrinha 2026 - Inverno"
+}
+
+### Safra 5
+POST http://localhost:3000/safras
+Content-Type: application/json
+
+{
+    "nome": "Safra 2026/2027 - Verão"
+}
+
+### Safra 6
+POST http://localhost:3000/safras
+Content-Type: application/json
+
+{
+    "nome": "Safrinha 2027 - Inverno"
+}
+
+### Safra 7
+POST http://localhost:3000/safras
+Content-Type: application/json
+
+{
+    "nome": "Safra 2027/2028 - Verão"
+}
+
+### Safra 8
+POST http://localhost:3000/safras
+Content-Type: application/json
+
+{
+    "nome": "Safrinha 2028 - Inverno"
+}
+
+### Safra 9
+POST http://localhost:3000/safras
+Content-Type: application/json
+
+{
+    "nome": "Safra 2028/2029 - Verão"
+}
+
+### Safra 10
+POST http://localhost:3000/safras
+Content-Type: application/json
+
+{
+    "nome": "Safrinha 2029 - Inverno"
+}
