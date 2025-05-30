@@ -21,6 +21,89 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
+# AG-API
+
+## Tecnologias Utilizadas
+
+- **Node.js**
+- **NestJS**
+- **TypeScript**
+- **TypeORM**
+- **PostgreSQL** (produção)
+- **Jest** (testes automatizados)
+- **Supertest** (testes E2E)
+- **Swagger** (documentação automática)
+
+---
+
+## Como rodar o projeto
+
+1. Instale as dependências:
+   ```sh
+   npm install
+   ```
+
+2. Rode a aplicação:
+   ```sh
+   npm run start:dev
+   ```
+
+---
+
+## Acessando o Swagger
+
+Após rodar a aplicação, acesse a documentação interativa em:
+
+```
+http://localhost:3000/api
+```
+
+---
+
+## Rodando os Testes
+
+- **Testes unitários e integrados:**
+  ```sh
+  npm test
+  ```
+
+- **Testes E2E:**
+  ```sh
+  npm test
+  # ou
+  npx jest src/test/
+  ```
+
+Os testes E2E utilizam banco de dados em memória (pg-mem), não afetando seu banco real.
+
+---
+
+## Estrutura dos Testes E2E
+
+Os arquivos de teste E2E estão em `src/test/` e seguem o padrão:
+- `safra.e2e.int.spec.ts`
+- `cultura.e2e.int.spec.ts`
+- `produtor.e2e.int.spec.ts`
+- `propriedade.e2e.int.spec.ts`
+- `cultura-plantada.e2e.int.spec.ts`
+
+Cada arquivo cobre os métodos principais (POST, GET, PUT/PATCH, DELETE) dos respectivos controllers.
+
+---
+
+## Scripts Úteis
+
+- `npm run start:dev` — inicia o servidor em modo desenvolvimento
+- `npm run test` — executa todos os testes
+- `npm run lint` — executa o linter
+
+---
+
+## Observações
+
+- Para acessar o Swagger, a aplicação deve estar rodando.
+- Os endpoints seguem o padrão RESTful.
+
 ## Description
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.

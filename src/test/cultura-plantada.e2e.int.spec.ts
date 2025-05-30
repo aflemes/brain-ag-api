@@ -5,7 +5,7 @@ import { AppModule } from '../app.module';
 
 jest.setTimeout(20000);
 
-describe('SafraController (e2e)', () => {
+describe('CulturaPlantadaController (e2e)', () => {
     let app: INestApplication;
     let createdId: number;
 
@@ -22,51 +22,51 @@ describe('SafraController (e2e)', () => {
         await app.close();
     });
 
-    it('/safras (POST) should create a safra', async () => {
-        const createDto = { nome: 'Safra 2031 Primavera' };
+    it('/culturas-plantadas (POST) should create a cultura plantada', async () => {
+        // Ajuste os IDs conforme necessário para entidades relacionadas
+        const createDto = { cultura_id: 3, safra_id: 1, propriedade_id: 1 };
         const response = await request(app.getHttpServer())
-            .post('/safras')
+            .post('/culturas-plantadas')
             .send(createDto)
             .expect(201);
         expect(response.body).toEqual(expect.any(Object));
-        expect(response.body.id).toEqual(expect.any(Number));
-        expect(response.body.nome).toEqual('Safra 2031 Primavera');
+        expect(response.body.id).toEqual(expect.any(Number));        
         createdId = response.body.id;
     });
 
-    it('/safras (GET) should return an array (find)', async () => {
+    it('/culturas-plantadas (GET) should return an array (find)', async () => {
         const response = await request(app.getHttpServer())
-            .get('/safras')
+            .get('/culturas-plantadas')
             .expect(200);
         expect(Array.isArray(response.body)).toBe(true);
     });
 
-    it('/safras/:id (GET) should return a safra by id', async () => {
+    it('/culturas-plantadas/:id (GET) should return a cultura plantada by id', async () => {
         const response = await request(app.getHttpServer())
-            .get(`/safras/${createdId}`)
+            .get(`/culturas-plantadas/${createdId}`)
             .expect(200);
         expect(response.body).toEqual(expect.any(Object));
         expect(response.body.id).toEqual(createdId);
     });
 
-    it('/safras/:id (PUT) should update a safra', async () => {
-        const updateDto = { nome: 'Safra 2031 Primavera' };
+    it('/culturas-plantadas/:id (PUT) should update a cultura plantada', async () => {
+        const updateDto = { area_plantada: 200 };
         const response = await request(app.getHttpServer())
-            .patch(`/safras/${createdId}`)
+            .patch(`/culturas-plantadas/${createdId}`)
             .send(updateDto)
             .expect(200);
         expect(response.body).toEqual(expect.any(Object));
         expect(response.body.id).toEqual(createdId);
-        expect(response.body.nome).toEqual('Safra 2031 Primavera');
+        expect(response.body.area_plantada).toEqual(200);
     });
 
-    it('/safras/:id (DELETE) should delete a safra', async () => {
+    it('/culturas-plantadas/:id (DELETE) should delete a cultura plantada', async () => {
         await request(app.getHttpServer())
-            .delete(`/safras/${createdId}`)
+            .delete(`/culturas-plantadas/${createdId}`)
             .expect(204);
         // Verifica se foi removido
         await request(app.getHttpServer())
-            .get(`/safras/${createdId}`)
+            .get(`/culturas-plantadas/${createdId}`)
             .expect(404);
     });
 });

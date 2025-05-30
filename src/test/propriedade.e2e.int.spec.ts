@@ -5,7 +5,7 @@ import { AppModule } from '../app.module';
 
 jest.setTimeout(20000);
 
-describe('SafraController (e2e)', () => {
+describe('PropriedadeController (e2e)', () => {
     let app: INestApplication;
     let createdId: number;
 
@@ -22,51 +22,51 @@ describe('SafraController (e2e)', () => {
         await app.close();
     });
 
-    it('/safras (POST) should create a safra', async () => {
-        const createDto = { nome: 'Safra 2031 Primavera' };
+    it('/propriedades (POST) should create a propriedade', async () => {
+        const createDto = { nome: 'Fazenda Boa Vista', cidade: 'Uberlândia', estado: 'MG', area_agricultavel: 1000, area_total: 3000, area_vegetacao: 2000, produtor_id: 8 };
         const response = await request(app.getHttpServer())
-            .post('/safras')
+            .post('/propriedades')
             .send(createDto)
             .expect(201);
         expect(response.body).toEqual(expect.any(Object));
         expect(response.body.id).toEqual(expect.any(Number));
-        expect(response.body.nome).toEqual('Safra 2031 Primavera');
+        expect(response.body.nome).toEqual('Fazenda Boa Vista');
         createdId = response.body.id;
     });
 
-    it('/safras (GET) should return an array (find)', async () => {
+    it('/propriedades (GET) should return an array (find)', async () => {
         const response = await request(app.getHttpServer())
-            .get('/safras')
+            .get('/propriedades')
             .expect(200);
         expect(Array.isArray(response.body)).toBe(true);
     });
 
-    it('/safras/:id (GET) should return a safra by id', async () => {
+    it('/propriedades/:id (GET) should return a propriedade by id', async () => {
         const response = await request(app.getHttpServer())
-            .get(`/safras/${createdId}`)
+            .get(`/propriedades/${createdId}`)
             .expect(200);
         expect(response.body).toEqual(expect.any(Object));
         expect(response.body.id).toEqual(createdId);
     });
 
-    it('/safras/:id (PUT) should update a safra', async () => {
-        const updateDto = { nome: 'Safra 2031 Primavera' };
+    it('/propriedades/:id (PUT) should update a propriedade', async () => {
+        const updateDto = { nome: 'Fazenda Boa Vista Atualizada' };
         const response = await request(app.getHttpServer())
-            .patch(`/safras/${createdId}`)
+            .patch(`/propriedades/${createdId}`)
             .send(updateDto)
             .expect(200);
         expect(response.body).toEqual(expect.any(Object));
         expect(response.body.id).toEqual(createdId);
-        expect(response.body.nome).toEqual('Safra 2031 Primavera');
+        expect(response.body.nome).toEqual('Fazenda Boa Vista Atualizada');
     });
 
-    it('/safras/:id (DELETE) should delete a safra', async () => {
+    it('/propriedades/:id (DELETE) should delete a propriedade', async () => {
         await request(app.getHttpServer())
-            .delete(`/safras/${createdId}`)
+            .delete(`/propriedades/${createdId}`)
             .expect(204);
         // Verifica se foi removido
         await request(app.getHttpServer())
-            .get(`/safras/${createdId}`)
+            .get(`/propriedades/${createdId}`)
             .expect(404);
     });
 });
