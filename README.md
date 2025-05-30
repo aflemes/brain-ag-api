@@ -35,6 +35,18 @@
 - **Swagger** (documentação automática)
 
 ---
+### O projeto está publicando no seguinte URL:
+
+ag-ui
+https://brain-ag-ui-production.up.railway.app/
+
+ag-api
+https://brain-ag-api-production.up.railway.app/
+
+swagger
+https://brain-ag-api-production.up.railway.app/api
+
+
 
 ## Como rodar o projeto
 
