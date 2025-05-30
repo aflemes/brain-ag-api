@@ -101,6 +101,25 @@ https://brain-ag-api-production.up.railway.app/api
    npm run start:dev
    ```
 
+## Utilizando Docker
+
+O projeto possui um `Dockerfile` para facilitar a criação de containers.
+
+### Build da imagem
+
+```powershell
+# No diretório ag-api
+docker build -t ag-api .
+```
+
+### Subindo o container
+
+```powershell
+docker run -p 3000:3000 --env-file .env ag-api
+```
+
+Você pode customizar as variáveis de ambiente no arquivo `.env` antes de subir o container.
+
 ---
 
 ## Acessando o Swagger
